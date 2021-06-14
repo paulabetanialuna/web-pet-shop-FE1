@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Este script sirve para linkear los iconos en toda la pagina-->
+    <script src="https://kit.fontawesome.com/aade8c0006.js" crossorigin="anonymous"></script>
+    <!--Link de hoja de estilos, para vincular el archivo CSS-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <!--link para que la pagina quede con todo  fuente roboto-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Mesa 4 - Primera web</title>
+</head>
+<body>
+    <!--En este encabezado vamos a colocar la barra superior oscura y la barra de navegacion naranja-->
+    <header>
+        <!--Esta seccion corresponde a la barra oscura-->
+        <section class="nav_oscura">
+            <p class="p_nav_oscura">Grandes ofertas en comederos</p>
+    
+            <label for="idioma"></label>
+            <select name="idioma" id="idioma">
+                <option value="español">Español</option>
+                <option value="inglés">Inglés</option>
+                <option value="portugués">Portugués</option>
+                <option value="francés">Francés</option>
+                <option value="italiano">Italiano</option>
+            </select>
+    
+            <label for="moneda"></label>
+            <select name="moneda" id="moneda">
+                <option value="ARG$">ARG$</option>
+                <option value="USA$">USA$</option>
+            </select>
+        </section>
+        <!-- El nav es la barra color naranja-->
+        <nav>
+            <img src="img/Logo.png" alt="logo de cat and dog">
+            <ul>
+            <!--Vamos dejar en href el # para luego hacer el enlace en secciones de la pagina-->
+            <!--El "far fa-....." es como llamamos al icono que queremos colocar, en este caso la huellita-->
+                <li><i class="fas fa-paw"></i><a href="#"> Categoria</a></li>
+                <li><i class="fas fa-paw"></i><a href="#"> Pet</a></li>
+                <li><i class="fas fa-paw"></i><a href="#"> Nosotros</a></li>
+                <li><i class="fas fa-paw"></i><a href="#"> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Seccion de la imagen principal-->
+        <section id="slide">
+            <!--img id="slide_img" src="img/bowl-and-pet-daities-on-green-background 1.png" alt="Foto de plato con comida, huesito y juguetes de mascotas"-->
+            <div class="slide_text">
+                <h2>¡Es un placer tenerte aquí!</h2>
+                <p>¡Comederos en descuento!</p>
+                <button class="comederos" type="button">COMEDEROS</button>
+            </div>
+        </section>
+
+        <!--Seccion de productos destacados-->
+        <section id="productos_destacados">
+            <div class="cabecera">
+                <img src="img/pawprint 1.png" alt="huellita de un animal">
+                <h1>Productos Destacados</h1>
+                <ul class="productoscatandpet">
+                    <li><a href="#">Comederos</a></li>
+                    <span>-</span>
+                    <li><a href="#">Accesorios</a></li>
+                    <span>-</span>
+                    <li><a href="#">Comida</a></li>
+                </ul>
+            </div>
+            <!--Cada uno de los div contiene la informacion de los 3 productos que deben estar expuestos-->
+            <div class="galeria_productos">
+                <div class="producto"> 
+                    <img src="img/churrasquito.png" alt="juguete de goma con forma de chuleta">
+                    <span class="producto_nombre">Juguete Churrasquito</span>
+                    <span class="producto_precio">$150</span>
+                </div>
+                <div class="producto"> 
+                    <img src="img/comedero.png" alt="comedero de acero">
+                    <span class="producto_nombre">Comedero para perro</span>
+                    <span class="producto_precio">$250</span>
+                </div>
+                <div class="producto"> 
+                    <img src="img/Huesito.png" alt="juguete en forma de huesito">
+                    <span class="producto_nombre">Juguete Huesito</span>
+                    <span class="producto_precio">$650</span>
+                </div>
+            </div>
+        </section>
+        <!--Formulario de contacto-->
+        <section class="formulario_contacto">
+            <h2>Contáctanos</h2>
+            <div class="form_catandpet">
+                <form class="mailform" data-form-type="contact"> <!--cada input es de distinto tipo, por el dato que se debe ingresar-->
+                    <input type="text" id="nombreyapellido" name="nombreyapellido" value="Nombre y Apellido">
+                    <input type="email" id="email_usuario" name="email_usuario" value="Ingresá tu correo electrónico">
+                    <input type="text" id="telefono" name="telefono" value="Teléfono">
+                    <!--el atributo placeholder es lo que me permite indicar que dato necesito que la persona escriba en el box-->
+
+                    <div class="enviarelformulario"> <!--Hay dos tipos de botones en este formulario-->
+                        <button class="resettoboton" type="reset">Resetear</button>
+                        <button class="contactoboton" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!--Barra de suscripcion-->
+        <section class="suscripcion">
+            <div class="suscripcion_barra">
+                <img src="img/mailcorriendo.png">
+                <h3>Suscríbete para más novedades</h3>
+            </div>
+            <div class="sus_catanddog">
+                <form class="mailform2" data-form-type="contact">
+                    <input type="email" id="email_usuario1" name="email_usuario" placeholder="Ingresá tu correo electrónico">
+                    <button class="suscboton" type="submit">Suscribirme</button>
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer_contenido">
+            <div class="footer_info">
+                <img src="img/Icono location.png" alt="icono de ubicacion">
+                <div class="footer_info_texto">
+                    <h3>Localidad</h3>
+                    <p>Calle - provincia</p>
+                </div>
+            </div>
+            <div class="footer_info">
+                <img src="img/Iconophone.png" alt="icono de telefono">
+                <div class="footer_info_texto">
+                    <h3>Teléfono</h3>
+                    <p>Número de teléfono</p>
+                </div>
+            </div>
+            <div class="footer_info">
+                <img src="img/Iconomail.png" alt="icono de emial" >
+                <div class="footer_info_texto">
+                    <h3>Correo Electrónico</h3>
+                    <p>Dirección de correo</p>
+                </div>
+            </div>
+        </div>
+        <img src="img/Logofooter.png" alt="logo de la empresa cat and dog">
+    </footer>
+</body>
+</html>

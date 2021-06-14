@@ -1,0 +1,359 @@
+/* ----------------------------*/
+/*Todo lo que coloque en esta seccion es GENERAL para toda la web*/
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ----------------------------*/
+/*header*/
+
+/* ----------------------------*/
+/*Barra de navegacion oscura*/
+.nav_oscura {
+    background-color: #222222;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    color: #F3F3F3;
+    height:20px;
+}
+.p_nav_oscura{
+    height: 12px;
+    padding-left: 5em;
+    border-radius: nullpx;
+    font-size: 10px;
+    margin-top: 0.5em;
+
+}
+
+select{
+	appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    border: none;
+    font-size: 10px;
+    width: 250px;
+    color: #F3F3F3;
+    font-size: 10px;
+}
+/*no estoy pudiendo hacer que la opcion quede la letra de 10 px */
+
+option {
+    appearance: none;
+    background-color: #222222;
+    color: #F3F3F3;
+    border: none;
+    font-size: 10px;
+}
+
+/* ----------------------------*/
+/*Barra de navegacion naranja*/
+nav {
+    display: flex;/*al utilizar esta propiedad automáticamente los acomoda en una fila a todos los elementos*/
+    height: 62px;
+    background: #F0A83E;
+    justify-content: space-between; /*con esta decimos como vamos a distribuir los elementos dentro de la línea*/
+    align-items: center;
+    padding: 20px 10px 20px 10px;    
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;  
+    
+}
+
+nav i{
+    color: #F3F3F3;
+    padding-right: 0.5em;
+}
+
+nav ul{ /*le digo que van a ser propiedades del ul dentro del nav*/
+    display: flex;
+    justify-content: space-between;
+    list-style: none; /*para sacar los puntitos de la lista*/
+    align-items: center;
+}
+
+nav ul li{
+    margin: 0 3em 0 3em;
+}
+
+nav img {
+    padding-left: 3em;
+}
+/* ----------------------------*/
+/*main*/
+
+/* ----------------------------*/
+/*Seccion slide*/
+#slide {
+    display: flex;
+    background-image: url("img/bowl-and-pet-daities-on-green-background\ 1.png");
+    background-size: cover;
+    height: 70vh;
+    justify-content:flex-end ;
+}
+
+.slide_text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin:1em;
+}
+
+#slide h2{
+    background-color: #F3F3F3;
+    border-radius: 5px;
+    color: #3C2313;
+    font-size: 30 px;
+    display: inline-block;
+    padding: 0.5em 3em;
+    text-align: center;
+    font-weight: 400;
+
+}
+
+#slide p {
+    color: #3C2313;
+    font-size: 16px;
+    text-align: center;
+    margin: 1em;
+}
+
+.comederos {
+    width: 141px;
+    height: 49px;
+    background: #F0A83E;
+    border-radius: 5px;
+    border: none;
+    color: #F3F3F3;
+    font-weight: bold;
+}
+
+
+
+/* ----------------------------*/
+/*Seccion productos destacados*/
+.cabecera{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.cabecera img {
+    padding: 0.5em;
+}
+
+.cabecera h1 {
+    font-size: 40px;
+    color: #3C2313;
+    font-weight: 700;
+}
+
+.cabecera ul {
+    display: flex;
+    justify-content:center;
+    list-style: none; /*para sacar los puntitos de la lista*/
+    align-items: center;
+
+}
+
+.cabecera ul li{
+    margin: 0 2em 0 2em;
+}
+.cabecera a {
+    text-decoration: none;
+    color: #666666;
+    font-size: 1em;      
+}
+.cabecera span {
+    color: #666666;
+    font-size: 1em;     
+}
+
+/* ----------------------------*/
+/*Seccion cajas de productos*/
+.galeria_productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    padding: 1em;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    background-color:#FBFAF6;
+}
+
+.producto_nombre {
+    padding: 0.5em;
+    font-size: 15px;
+    color: #3C2313;
+}
+
+.producto_precio {
+    padding-bottom: 1em;
+    font-size: 15px;
+    color:#F0A83E;
+}
+/* ----------------------------*/
+/*Seccion Formulario*/
+.formulario_contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.formulario_contacto h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #3C2313;
+    margin-bottom: 0.5em;
+}
+
+
+.mailform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mailform input {
+    /* Rectangle 16 */
+    width: 340px;
+    height: 40px;
+    left: calc(50% - 340px/2 + 1px);
+    top: calc(50% - 40px/2 + 275.5px);
+    background: #3C2313;
+    border-radius: 15px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 9px;
+    padding-left: 2em;
+    margin: 1em;
+}
+
+
+.enviarelformulario {
+    margin-top:2em ;
+}
+
+.resettoboton {
+    width: 110px;
+    height: 34px;
+    background: #8A8787;
+    border-radius: 15px;
+    border: none;
+    color: #F3F3F3;
+    font-size: 16px;
+}
+
+.contactoboton {
+    width: 110px;
+    height: 34px;
+    background: #F0A83E;
+    border-radius: 15px;
+    border: none;
+    color: #F3F3F3;
+    font-size: 16px;
+}
+
+/* ----------------------------*/
+/*Seccion Barra de suscripcion*/
+.suscripcion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F0A83E;
+    padding: 1em;
+    margin-top: 4em;
+
+}
+
+.suscripcion_barra{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1em;
+}
+
+.suscripcion_barra h3 {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight:700;
+    margin-left: 1em;
+}
+
+.mailform2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#email_usuario1 {
+    width: 271px;
+    height: 40px;
+    left: calc(50% - 271px/2 + 254.5px);
+    top: calc(50% - 40px/2 + 575.5px);
+    background: #FFFFFF;
+    border-radius: 15px;
+    border: none;
+    margin-right: 0.5em;
+    font-size: 9px;
+    color: #A0A0A0;
+    padding-left: 1em;
+}
+
+.suscboton {
+    width: 70px;
+    height: 34px;
+    left: calc(50% - 70px/2 + 430px);
+    top: calc(50% - 34px/2 + 575.5px);
+    background: #3C2313;
+    border-radius: 15px;
+    border: none;
+    color:#FFFFFF;
+    font-size: 9px;
+    font-weight: 700;
+    margin-right: 2em;
+}
+
+/* ----------------------------*/
+/*Footer*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3C2313;
+    color: #FFFFFF;
+    padding: 2em 4em 0 4em;
+}
+
+.footer_info {
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+
+.footer_info_texto {
+    margin-left: 2em;
+}
