@@ -1,6 +1,3 @@
-/* ----------------------------*/
-/*Todo lo que coloque en esta seccion es GENERAL para toda la web*/
-
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -13,7 +10,7 @@ a {
 /*header*/
 
 /* ----------------------------*/
-/*Barra de navegacion oscura*/
+/*barra de navegacion oscura*/
 .header_top {
     background-color: black;
     color: white;
@@ -42,7 +39,7 @@ a {
 }
 
 /* ----------------------------*/
-/*Barra de navegacion naranja*/
+/*barra de navegacion naranja*/
 nav {
     display: flex;/*al utilizar esta propiedad automáticamente los acomoda en una fila a todos los elementos*/
     height: 62px;
@@ -82,7 +79,7 @@ nav img {
 /*main*/
 
 /* ----------------------------*/
-/*Seccion slide*/
+/*seccion slide*/
 #slide {
     display: flex;
     background-image: url("img/bowl-and-pet-daities-on-green-background\ 1.png");
@@ -127,11 +124,11 @@ nav img {
     color: #F3F3F3;
     font-weight: bold;
 }
-
+quien
 
 
 /* ----------------------------*/
-/*Seccion productos destacados*/
+/*seccion productos destacados*/
 .cabecera{
     text-align: center;
     justify-content: center;
@@ -171,7 +168,7 @@ nav img {
 }
 
 /* ----------------------------*/
-/*Seccion cajas de productos*/
+/*seccion cajas de productos*/
 .galeria_productos {
     display: flex;
     justify-content: center;
@@ -201,7 +198,7 @@ nav img {
     color:#F0A83E;
 }
 /* ----------------------------*/
-/*Seccion Formulario*/
+/*seccion formulario*/
 .formulario_contacto {
     display: flex;
     flex-direction: column;
@@ -226,7 +223,6 @@ nav img {
 }
 
 .mailform input {
-    /* Rectangle 16 */
     width: 340px;
     height: 40px;
     left: calc(50% - 340px/2 + 1px);
@@ -266,7 +262,7 @@ nav img {
 }
 
 /* ----------------------------*/
-/*Seccion Barra de suscripcion*/
+/*barra de suscripcion*/
 .suscripcion {
     display: flex;
     justify-content: space-between;
@@ -325,7 +321,7 @@ nav img {
 }
 
 /* ----------------------------*/
-/*Footer*/
+/*footer*/
 footer {
     display: flex;
     justify-content: space-between;
